@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* Background Color and General Styling */
+      body {
+        background-color: #f7e2a0; /* Kuning muda seperti tema sejarah */
+        font-family: 'Arial', sans-serif;
+        color: #333;
+      }
+  
+      .navbar {
+        background-color: #f0c25e; /* Kuning yang lebih gelap untuk navbar */
+      }
+  
+      .navbar .navbar-brand img {
+        height: 40px;
+      }
+  
+      .navbar-nav .nav-link {
+        color: #333 !important;
+      }
+  
+      .navbar-nav .nav-link:hover {
+        color: #000 !important;
+      }
+  
+      .jumbotron {
+        background-color: #f7e2a0; /* Kuning muda untuk jumbotron */
+        padding: 50px 0;
+        text-align: center;
+      }
+  
+      .jumbotron h1 {
+        color: #4a4a4a; /* Warna teks untuk heading */
+        font-size: 3rem;
+      }
+  
+      .jumbotron p {
+        color: #6a6a6a;
+      }
+  
+      .jumbotron img {
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      }
+  
+      .button {
+        background-color: #f0c25e;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 1rem;
+        display: inline-block;
+        border-radius: 4px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+  
+      .button:hover {
+        background-color: #e0b14b;
+      }
+  
+      .section {
+        padding: 50px 0;
+      }
+  
+      .section h2 {
+        color: #4a4a4a;
+      }
+  
+      footer {
+        background-color: #f0c25e;
+        padding: 20px 0;
+        color: #fff;
+        text-align: center;
+      }
+  
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+  
+      footer a:hover {
+        text-decoration: underline;
+      }
+  
+      .container {
+        max-width: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+ 
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/852/937/non_2x/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg"
+         alt="Logo" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Layanan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#pendaftaran">Pendaftaran Anggota</a></li>
+              <li><a class="dropdown-item" href="#informasi-layanan">Informasi Layanan</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#koleksi">Koleksi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- Start Jumbotron -->
+<section class="jumbotron text-center" 
+style="background-color: #e8d5ab; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+  <img src="perpus.jpg"
+   alt="Library Image" 
+   width="200" 
+   class="rounded-circle img-thumbnail" />
+  <h1 class="display-4 has-text-weight-bold"
+   style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+    Selamat Datang
+  </h1>
+  <p class="lead">
+    Di Perpustakaan Kami, Jelajahi Dunia Pengetahuan
+  </p>
+  <a
+    class="button is-light is-large"
+    style="margin-top: 1.5rem; box-shadow: 2px 2px 5px rgba(0,0,0,0.4);"
+    href="#about"
+  >
+    Jelajahi Sekarang
+  </a>
+  <svg xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 1440 320" 
+  style="width: 100%; position: absolute; bottom: 0;">
+    <path
+      fill="#ffffff"
+      fill-opacity="1"
+      d="M0,32L40,48C80,64,160,96,240,138.7C320,181,400,235,480
+      ,245.3C560,256,640,224,720,186.7C800,149,880,107,960,117.3C1040,
+      128,1120,192,1200,197.3C1280,203,1360,149,1400,122.7L1440,
+        96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,
+        320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,
+        320C160,320,80,320,40,320L0,320Z"
+    ></path>
+  </svg>
+</section>
+<!-- End Jumbotron -->
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="title">Tentang Kami</h2>
+        <p>
+          Perpustakaan kami adalah pusat literasi modern yang menyediakan koleksi buku fisik dan digital, fasilitas ruang baca nyaman, serta layanan edukasi untuk mendukung masyarakat dalam mengeksplorasi pengetahuan dan memperluas wawasan.
+        </p>
+      </div>
+    </section>
+    
+
+    <!-- Layanan Section -->
+   <!-- Layanan Section -->
+<section id="pendaftaran" class="section">
+  <div class="container">
+    <h2 class="title">Pendaftaran Anggota</h2>
+    <p>Informasi mengenai pendaftaran anggota dapat ditemukan di sini.</p>
+
+    <!-- Formulir Pendaftaran -->
+    <form id="form" class="mt-4" method="POST">
+      <div class="field">
+        <label class="label">Nama</label>
+        <div class="control">
+          <input class="input" type="name" placeholder="Nama" name="Nama" />
+        </div> </div>
+      <div class="field">
+        <label class="label">Kelas</label>
+        <div class="control">
+          <input class="input" type="number" placeholder="Kelas" name="Kelas" />  </div> </div>
+      <div class="field">
+        <label class="label">NIS</label>
+        <div class="control">
+          <input class="input" type="number" placeholder="NIS" name="NIS" />
+        </div></div>
+      <div class="field">
+        <label class="label">Alamat</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Alamat" name="Alamat" />
+        </div> </div>
+      <div class="field">
+        <label class="label">Telepon</label>
+        <div class="control">
+          <input class="input" type="number" placeholder="Telepon" name="Telepon" />
+        </div> </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Sign Up
+          </button> </div>
+        <div class="control">
+          <button class="button is-danger">Cancel</button>
+        </div> </div> </form>
+    <div
+      id="message"
+    ></div>
+  </div>
+</section>
+
+<section id="informasi-layanan" class="section">
+  <div class="container">
+    <h2 class="title">Informasi Layanan</h2>
+    <p>Berikut adalah layanan yang kami sediakan untuk mendukung kegiatan literasi Anda:</p>
+    <ul>
+      <li><strong>Peminjaman Buku:</strong> Pinjam hingga 3 buku selama 14 hari. (Senin - Sabtu, 08:00 - 16:00)</li>
+      <li><strong>Pengembalian Buku:</strong> Loket pengembalian atau dropbox otomatis. (Senin - Sabtu, 08:00 - 16:00)</li>
+      <li><strong>Keanggotaan:</strong> Gratis untuk pelajar, Rp 50.000/tahun untuk umum.</li>
+      <li><strong>E-Library:</strong> Akses ribuan e-book dan jurnal digital 24/7.</li>
+      <li><strong>Ruang Baca:</strong> Ruang baca nyaman dan tenang. (Senin - Sabtu, 08:00 - 18:00)</li>
+      <li><strong>Konsultasi Penelitian:</strong> Konsultasi dengan pustakawan profesional. (By appointment)</li>
+    </ul>
+    <p class="mt-5">
+      Untuk informasi lebih lanjut, hubungi kami melalui email <strong>info@perpustakaan.com</strong> atau telepon di <strong>+62-123-456-7890</strong>.
+    </p>
+  </div>
+</section>
+
+
+    <!-- Koleksi Section -->
+    <section id="koleksi" class="section">
+      <div class="container">
+        <h2 class="title">Koleksi</h2>
+        <ul>
+          <li>Buku Fiksi</li>
+          <li>Buku Non-Fiksi</li>
+          <li>Jurnal Ilmiah</li>
+          <li>E-Book</li>
+          <li>Koleksi Referensi</li>
+          <li>Majalah dan Surat Kabar</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Perpustakaan</strong> oleh <a href="#">Pria Misterius</a>. <br />
+          Alamat: Jl. Contoh No. 123, Kolam Ikan | Telepon: +62-123-456-7890 <br />
+          Email: info@perpustakaan.com <br />
+          <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbyNsI7T2wzwg6UAfJIalrFniOTq2hk3P_qg_yODhGAI5XHkd6RBtdLr5bK0OH1tym4Q/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+  </body>
+</html>
